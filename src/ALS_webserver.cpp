@@ -30,3 +30,9 @@ void ALS_espwebserver::serverLoop() 		{clientServer.handleLoop();}
 void ALS_espwebserver::http_sendJson(String json){
 	clientServer.handleJson(json);
 }
+void ALS_espwebserver::http_sendHtml(String json){
+	clientServer.handleFileRead(json);
+}
+void ALS_espwebserver::http_sendTxt(String json){
+	clientServer.replyOKWithMsg(json);
+}

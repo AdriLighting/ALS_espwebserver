@@ -19,6 +19,8 @@
 		void serverBegin();
 
 		void http_sendJson(String json);
+		void http_sendHtml(String json);
+		void http_sendTxt(String json);
 		
 	};		
 	ALS_espwebserver * ALS_espwebserverPtr_get();
