@@ -36,3 +36,6 @@ void ALS_espwebserver::http_sendHtml(String json){
 void ALS_espwebserver::http_sendTxt(String json){
 	clientServer.replyOKWithMsg(json);
 }
+void ALS_espwebserver::socket_send(String json){
+	socketServer.broadcastTXT(json);
+}
