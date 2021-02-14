@@ -17,7 +17,7 @@ ALS_espwebserver::ALS_espwebserver(){
 
 void ALS_espwebserver::serverFS(boolean fsOK) {
 	clientServer.filesystem_ok(fsOK);
-	if (fsOK) clientServer.filesystem_set(&SPIFFS);
+	if (fsOK) clientServer.filesystem_set(&LittleFS);
 }
 void ALS_espwebserver::serverInitialize()	{clientServer.initialize(80);	}
 
